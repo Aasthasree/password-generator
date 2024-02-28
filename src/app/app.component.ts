@@ -1,5 +1,7 @@
+//Angular Imports
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+//Components
 import { PasswordGeneratorComponent } from './password-generator/password-generator.component';
 
 @Component({

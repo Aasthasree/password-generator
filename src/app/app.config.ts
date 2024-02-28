@@ -1,8 +1,10 @@
+//Angular Imports
 import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
-
 import { routes } from './app.routes';
+//Third-party
+import { provideZxvbnServiceForPSM } from 'angular-password-strength-meter/zxcvbn';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes)]
+  providers: [provideRouter(routes), provideZxvbnServiceForPSM()]
 };
